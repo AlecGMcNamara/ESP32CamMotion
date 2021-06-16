@@ -150,6 +150,6 @@
 #define HREF_GPIO_NUM     26
 #define PCLK_GPIO_NUM     21
 
-#else
-#error "Camera model not selected"
+//#else
+//#error "Camera model not selected"
 #endif
