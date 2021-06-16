@@ -26,18 +26,11 @@ bool motion_detect();
 void update_frame();
 void print_frame(uint16_t frame[H][W]);
 
-
-/**
- *
- */
 void setup() {
     Serial.begin(115200);
     Serial.println(setup_camera(FRAME_SIZE) ? "OK" : "ERR INIT");
 }
 
-/**
- *
- */
 void loop() {
     if (!capture_still()) {
         Serial.println("Failed capture");
@@ -54,10 +47,6 @@ void loop() {
     //Serial.println("=================");
 }
 
-
-/**
- *
- */
 bool setup_camera(framesize_t frameSize) {
     camera_config_t config;
 
